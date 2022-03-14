@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git pull
 git add .
 
 echo "enter msg to commit"
