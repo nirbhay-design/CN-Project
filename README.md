@@ -28,7 +28,7 @@ localhost:<PORT>
 
 ## **Tutorial to follow**
 
-[Zoom_clone](https://github.com/nirbhay-design/CN-Project.git)
+[Zoom_clone](https://www.youtube.com/watch?v=ZVznzY7EjuY&t=9162s)
 
 
 ## **Team Members**
