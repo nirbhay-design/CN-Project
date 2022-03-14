@@ -3,6 +3,11 @@
 ## **How to run**
 
 - Clone the github repo
+
+```
+$ git clone https://github.com/nirbhay-design/CN-Project.git
+```
+
 - install the following dependencies
 
 ```
@@ -20,6 +25,11 @@ $ npm start
 ```
 localhost:<PORT>
 ```
+
+## **Tutorial to follow**
+
+[Zoom_clone](https://github.com/nirbhay-design/CN-Project.git)
+
 
 ## **Team Members**
 
