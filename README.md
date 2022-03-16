@@ -11,7 +11,7 @@ $ git clone https://github.com/nirbhay-design/CN-Project.git
 - install the following dependencies
 
 ```
-$ npm i ejs express
+$ npm i ejs express uuid
 ```
 
 - then enter the following command
