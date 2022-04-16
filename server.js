@@ -15,7 +15,8 @@ app.use(express.urlencoded({ extended:true}))
 app.use('/peerjs',peerServer)
 
 app.get('/',(req,res)=>{
-    res.redirect(`/${uuidv4()}`)
+    res.render('homepage',{roomId: `/${uuidv4()}`})
+    // res.redirect(`/${uuidv4()}`)
 })
 
 app.get('/:room',(req,res)=>{
@@ -41,4 +42,5 @@ server.listen(Port,()=>{
     console.log(`app is listening at port ${Port}`)
 })
 
+// module.exports = app;
 // 1:22:15 / 3:28:02
