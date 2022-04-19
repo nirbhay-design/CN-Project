@@ -50,6 +50,10 @@ const connectToNewUser = (userId, stream) => {
         addvideostream(video,userVideoStream);
     })
 
+    call.on('close' ,()=>{
+        video.remove()
+    })
+
 }
 
 const addvideostream = (video,stream) => {
