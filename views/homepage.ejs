@@ -4,24 +4,33 @@
     <%-  include('basetemplate.ejs') %>
     <title>Zoom clone</title>
     <link rel="stylesheet" href="homepage.css">
-    <script src="https://kit.fontawesome.com/5c6aa1f215.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
     <div class="main__ejs__content">
-        <div class="meet__image">
+        <!-- <div class="meet__image">
             <img src="https://media.istockphoto.com/vectors/concept-of-consultation-with-a-business-leader-who-discusses-the-vector-id1193052301?k=20&m=1193052301&s=612x612&w=0&h=sSryerhtE3eSxrqVpz09aAbDHr9zxrgRmDjfU-xQZ_I=" id="meet_img" alt="meetimg">
-        </div>
+        </div> -->
         <div class="main__form__content">
-            <input type="text" class='input__credentials' id='meet_id' placeholder="Enter meeting Id">
-            <input type="text" class='input__credentials' id="peer_name" placeholder="Enter your name">
-            <div class="form__buttons">
-                <button onclick="return_meet_link()" class="form__button1">JoinMeeting</button> 
-                <a href="<%= roomId %>"><button class="form__button2">CreateNewLink</button></a>
+            <img class="meet__image" src="https://modelschoolrohtak.com/css/gallery/VideoIcon.jpg" alt="image"/>
+            <h3>Join A Meeting !!!</h3>
+            <div class="join__meeting">
+                <input type="text" class='input__credentials' id='meet_id' placeholder="Enter meeting Id">
+                <input type="text" class='input__credentials' id="peer_name" placeholder="Enter your name">
+                <div class="form__button">
+                    <button onclick="return_meet_link()" class="form__button1">JoinMeeting</button> 
+                </div>
             </div>
+            <hr/>
+            <h3>Host a Meeting with just one click !!!</h3>
+            <div class="host__meeting">
+                <input type="text" class='input__credentials' id="host_peer_name" placeholder="Enter your name">
+                <div class="form__button">
+                    <a href="<%= roomId %>"><button class="form__button2">CreateNewLink</button></a>
+                </div>
+            </div>
+            
         </div>
     </div>
 

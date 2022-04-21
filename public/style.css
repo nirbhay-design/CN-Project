@@ -1,6 +1,12 @@
 #video-grid{
     display:flex;
-    justify-content:center;
+    flex-wrap:wrap;
+    overflow-y:scroll
+    /* justify-content:center; */
+}
+
+#video-grid::-webkit-scrollbar {
+    display:none;
 }
 
 video {
@@ -27,17 +33,23 @@ video {
     flex-direction:column;
     /* justify-content:space-between; */
     padding:3px;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-size:cover; */
     background-color:white;
-    border:1px solid white;
-    border-radius:10px;
+    border:1px solid #141A46;
+    /* border-radius:10px; */
 }
 
 .main__videos{
     flex-grow:1;
-    background-color:black;
+    background-color:#141A46;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat:no-repeat;
+    background-size:cover; */
     display:flex;
-    justify-content:center;
-    align-items:center;
+    /* justify-content:center; */
+    /* align-items:center; */
 }
 
 .main__controls__block{
@@ -45,6 +57,7 @@ video {
     flex-direction:row;
     justify-content:center;
     align-items:center;
+    /* border:2px solid red; */
 }
 
 .main__controls__button{
@@ -64,7 +77,11 @@ video {
 }
 
 .main__controls{
-    background-color:#1C1E20;
+    background-color:#141A46;
+    border-top:1px solid white;
+    /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
+    background-repeat:no-repeat;
+    background-size:cover; */
 }
 
 span{
@@ -81,20 +98,22 @@ span{
 }
 
 #chat_message{
-    border:none;
+    border:1px solid white;
     outline-width:0px;
     font-size:13px;
     border-radius:6px;
     width:100%;
     padding:10px;
-    background-color:#f1f3f4;
+    color:white;
+    background-color:#141A46;
     margin:0px 0px 10px 0px;
 }
 
 .chat__header{
-    border:1px solid white;
+    border:1px solid #292826;
     border-radius:10px;
-    background-color:#f1f3f4;
+    background-color:#141A46;
+    color:#F9D342;
     padding:15px;
     display:flex;
     flex-wrap:wrap;
@@ -113,11 +132,11 @@ span{
 }
 
 .message{
-    border:1px solid white;
-    color:black;
+    border:1px solid #141A46;
+    color:#141A46;
     padding:5px;
     display:block;
-    /* background-color:#4C8BF5; */
+    /* background-color:#EC8B5E; */
     /* background-color:#f1f1f1; */
     margin-top:1px;
     border-radius:5px;
@@ -132,8 +151,26 @@ ul{
 
 h5{
     text-align:center;
+    color:#141A46;
 }
 
 .unmute, .unvideo{
-    color:#CC3B33;
+    color:#F9D342;
 }
+
+video {
+    border:3px solid #EC8B5E;
+    border-radius:5px;
+}
+
+::placeholder{
+    color:white;
+}
+
+/* .video__stop{
+    background-color:red;
+} */
+
+/* .video__h3{
+    color:white;
+} */

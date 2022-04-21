@@ -11,7 +11,7 @@ var peer = new Peer(undefined, {
     port:'3000',
 });
 
-
+const peers = {}
 
 let myvideostream;
 navigator.mediaDevices.getUserMedia({
@@ -23,8 +23,6 @@ navigator.mediaDevices.getUserMedia({
     peer.on('call',call => {
         call.answer(stream)
         const video = document.createElement('video')
-        // video.muted = true;
-        // video.autoplay = true;
         call.on('stream',userVideoStream => {
             addvideostream(video,userVideoStream);
         })
@@ -36,6 +34,12 @@ navigator.mediaDevices.getUserMedia({
     })
 })
 
+
+socket.on('user-disconnected',userId => {
+    if (peers[userId]) peers[userId].close()
+})
+
+
 peer.on('open',id => {
     socket.emit('join-room',ROOM_ID,id);
 })
@@ -44,7 +48,6 @@ peer.on('open',id => {
 const connectToNewUser = (userId, stream) => {
     const call = peer.call(userId,stream)
     const video = document.createElement('video')
-    // video.muted = true;
     video.autoplay = true;
     call.on('stream',userVideoStream => {
         addvideostream(video,userVideoStream);
@@ -53,7 +56,7 @@ const connectToNewUser = (userId, stream) => {
     call.on('close' ,()=>{
         video.remove()
     })
-
+    peers[userId] = call
 }
 
 const addvideostream = (video,stream) => {
@@ -118,8 +121,10 @@ const playStop = () =>{
     if (enabled) {
         myvideostream.getVideoTracks()[0].enabled = false;
         setPlayVideo();
+        $('video').addClass('video__stop')
     } else{
         setStopVideo();
+        $('video').removeClass('video__stop')
         myvideostream.getVideoTracks()[0].enabled = true;
     }
 }
@@ -142,5 +147,7 @@ const setStopVideo = () =>{
     $('.main__video__button').html(myhtml)
 }
 
-
+const move_to_home = () => {
+    window.location.href = `/`
+}
 
