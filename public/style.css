@@ -43,7 +43,7 @@ video {
 
 .main__videos{
     flex-grow:1;
-    background-color:#141A46;
+    background-color:#313552;
     /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
     background-repeat:no-repeat;
     background-size:cover; */
@@ -77,7 +77,7 @@ video {
 }
 
 .main__controls{
-    background-color:#141A46;
+    background-color:#313552;
     border-top:1px solid white;
     /* background-image:url('https://img.freepik.com/free-vector/white-blurred-background_1034-249.jpg?w=2000');
     background-repeat:no-repeat;
