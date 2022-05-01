@@ -176,3 +176,10 @@ video {
 /* .video__h3{
     color:white;
 } */
+
+@media only screen and (max-width: 600px) {
+    .main__right{
+        flex:0.5;
+    }
+
+}
