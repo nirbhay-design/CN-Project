@@ -4,6 +4,7 @@ const myvideo = document.createElement("video");
 // myvideo.autoplay=true;
 // myvideo.muted = true;
 myvideo.autoplay = true;
+myvideo.muted='muted';
 
 // console.log(videogrid)
 var peer = new Peer(undefined, {

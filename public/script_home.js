@@ -1,6 +1,7 @@
 // import attendance from "./attendance"
 
 // var userlist = {}
+// const ejs = require('ejs')
 
 const return_date = () => {
     let date = new Date()
@@ -22,6 +23,7 @@ const return_meet_link = () => {
         alert('peer_name cannot be empty');
     } else {
         window.location.href = `/${meet_id.val()}`
+        // ejs.renderFile('../views/room.ejs',{})
     }
 }
 
