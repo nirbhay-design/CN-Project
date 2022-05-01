@@ -1,6 +1,7 @@
 const socket = io();
 const videogrid = document.getElementById('video-grid')
 const myvideo = document.createElement("video");
+// myvideo.autoplay=true;
 // myvideo.muted = true;
 myvideo.autoplay = true;
 
@@ -61,6 +62,7 @@ const connectToNewUser = (userId, stream) => {
 
 const addvideostream = (video,stream) => {
     video.srcObject = stream;
+    video.autoplay=true;
     video.addEventListener('loadmetadata',() => {
         video.play();
     })

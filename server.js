@@ -23,6 +23,7 @@ app.get('/:room',(req,res)=>{
     res.render('room',{roomId: req.params.room})
 })
 
+
 io.on('connection',socket=>{
     socket.on('join-room', (roomId, userId) => {
         socket.join(roomId)
@@ -46,5 +47,10 @@ server.listen(Port,()=>{
     console.log(`app is listening at port ${Port}`)
 })
 
+app.post("/",function(req,res){
+    username=req.body.peer_name
+    console.log(username)
+
+});
 // module.exports = app;
 // 1:22:15 / 3:28:02

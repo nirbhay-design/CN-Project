@@ -6,10 +6,12 @@
 }
 
 #video-grid::-webkit-scrollbar {
+    
     display:none;
 }
 
 video {
+    
     height:300px;
     width:400px;
     object-fit:cover;
