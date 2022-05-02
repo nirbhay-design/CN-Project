@@ -65,7 +65,7 @@ https://stormy-peak-75848.herokuapp.com/
 
 ## **Team Members**
 
-- Mayank Raj
-- Nirbhay Sharma
-- Kshitiz
+- Mayank Raj (B19CSE053)
+- Nirbhay Sharma (B19CSE114)
+- Kshitiz (B19CSE111)
 
