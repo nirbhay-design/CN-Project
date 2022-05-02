@@ -5,7 +5,7 @@
 - Clone the github repo
 
 ```
-$ git clone https://github.com/nirbhay-design/CN-Project.git
+git clone https://github.com/nirbhay-design/CN-Project.git
 ```
 - Install the node modules
 
@@ -16,13 +16,13 @@ npm install
 - install the following dependencies
 
 ```
-$ npm i ejs express uuid nodemon peerjs socket.io
+npm i ejs express uuid nodemon peerjs socket.io
 ```
 
 - then enter the following command
 
 ```
-$ npm start
+npm start
 ```
 
 - then on browser type
